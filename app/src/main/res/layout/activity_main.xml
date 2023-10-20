@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="General"
+                android:layout_marginStart="4dp"
+                style="?attr/materialButtonStyle"
+                android:id="@+id/button_general"
+                android:enabled="false"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Technology"
+                style="?attr/materialButtonStyle"
+                android:layout_marginStart="4dp"
+                android:id="@+id/button_technology" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Sports" android:layout_marginStart="4dp"
+                style="?attr/materialButtonStyle"
+                android:id="@+id/button_sports"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                style="?attr/materialButtonStyle"
+                android:text="Science" android:layout_marginStart="4dp"
+                android:id="@+id/button_science"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                style="?attr/materialButtonStyle"
+                android:text="Health" android:layout_marginStart="4dp"
+                android:id="@+id/button_health"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                style="?attr/materialButtonStyle"
+                android:text="Business" android:layout_marginStart="4dp"
+                android:id="@+id/button_business"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                style="?attr/materialButtonStyle"
+                android:layout_marginEnd="4dp"
+                android:text="Entertainment"
+                android:layout_marginStart="4dp"
+                android:id="@+id/button_entertainment"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp">
+        <androidx.appcompat.widget.SearchView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/search_view"/>
+    </androidx.cardview.widget.CardView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycler_main"/>
+</LinearLayout>
